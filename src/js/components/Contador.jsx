@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const contarSegundos = ({ seconds }) => {
+const Contador = ({ seconds }) => {
     const digits = String(seconds).padStart(6, "0").split("");
 
     return (
@@ -16,8 +16,8 @@ const contarSegundos = ({ seconds }) => {
     );
 };
 
-contarSegundos.propTypes = {
+Contador.propTypes = {
     seconds: PropTypes.number.isRequired,
 };
 
-export default contarSegundos;
+export default Contador;
